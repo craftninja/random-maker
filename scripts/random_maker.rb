@@ -11,4 +11,6 @@ fabric_and_amounts = {
   ni_little_letter_blue: 6,
 }
 
-pp randMaker = RandomMaker.new(fabric_and_amounts)
+randMaker = RandomMaker.new(fabric_and_amounts)
+
+pp randMaker.list
