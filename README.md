@@ -2,7 +2,18 @@
 
 ### How do you use this thing?
 
-
+* Check out that script file. Change your type of thing and amounts to what you will.
+* pp will show you your random list. Feel free to run / "new up" mult times if you don't like the output.
+* Run the script:
+  * in terminal, cd'ed into this project directory, `$ ruby scripts/random_maker.rb`
+* Play with it in IRB
+  * in terminal, cd'ed into this project directory
+  * `$ irb`
+  * `require './lib/random_maker.rb'`
+  * new up the class: `rm = RandomMaker.new(thing:5, another_thing:2)`
+  * list the randomized array: `rm.list`
+  * NOTE: the method list does not randomize the array, feel free to call mult times. Newing up the class and instanciating it with the same object will create a new randomized list. If you don't like the order of your list, new up the class again.
+* Happy randomizing!
 
 ### How did you make this thing?
 
