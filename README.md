@@ -4,9 +4,9 @@
 
 * Fork, clone, cd into that project directory
 * Check out that script file. Change your "type of thing" and "amounts" to what you will.
-* `pp` will show you your random list within the class object. Feel free to run / "new up" mult times if you don't like the output.
 * Run the script:
   * in terminal, cd'ed into this project directory, `$ ruby scripts/random_maker.rb`
+  * The line with `pp` will show you your random list within the class object. Feel free to run / "new up" mult times if you don't like the output.
 * Play with it in IRB
   * in terminal, cd'ed into this project directory
   * `$ irb`
