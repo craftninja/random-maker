@@ -1,7 +1,7 @@
 require('random_maker')
 
 describe RandomMaker do
-  it "initializes with type/amounts, creates random list" do
+  it "initializes with type & amounts, creates random list" do
     fabric_and_amounts = {
       fish: 11,
       bamboo_gold: 12,
