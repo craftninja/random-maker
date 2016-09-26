@@ -1,27 +1,19 @@
-class RandomMaker
-  def initialize(fabrics)
-    fabric_list = make_list_of_fabric_hash(fabrics)
-    @fabric_list = randomize_array(fabric_list)
+class Quilt
+  def initialize(fabrics_and_amounts)
+    @list = expand(fabrics_and_amounts).shuffle
   end
 
-  def list
-    @fabric_list
-  end
-
+  attr_reader :list
 
   private
 
-  def make_list_of_fabric_hash(fabrics)
+  def expand(fabrics)
     fabric_list = []
-    fabrics.each_key do |fabric|
-      fabrics[fabric].times do
+    fabrics.each_pair do |fabric, amount|
+      amount.times do
         fabric_list << fabric
       end
     end
     fabric_list
-  end
-
-  def randomize_array(list)
-    list.sample(list.length)
   end
 end

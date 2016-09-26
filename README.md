@@ -5,14 +5,14 @@
 * Fork, clone, cd into that project directory
 * Check out that script file. Change your "type of thing" and "amounts" to what you will.
 * Run the script:
-  * in terminal, cd'ed into this project directory, `$ ruby scripts/random_maker.rb`
+  * in terminal, cd'ed into this project directory, `$ ruby scripts/quilt.rb`
   * The line with `pp` will show you your random list. Feel free to run / "new up" mult times if you don't like the output.
 * Play with it in IRB
   * in terminal, cd'ed into this project directory
   * `$ irb`
-  * `require './lib/random_maker.rb'`
-  * new up the class: `rm = RandomMaker.new(thing:5, another_thing:2)`
-  * list the randomized array: `rm.list`
+  * `require './lib/quilt.rb'`
+  * new up the class: `q = Quilt.new(thing:5, another_thing:2)`
+  * list the randomized array: `q.list`
   * NOTE: the method list does not randomize the array, feel free to call mult times. Newing up the class and instanciating it with the same object will create a new randomized list. If you don't like the order of your list, new up the class again.
 * Happy randomizing!
 

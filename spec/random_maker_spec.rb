@@ -1,6 +1,6 @@
 require('random_maker')
 
-describe RandomMaker do
+describe Quilt do
   it "initializes with type & amounts, creates random list" do
     fabric_and_amounts = {
       fish: 11,
@@ -12,7 +12,7 @@ describe RandomMaker do
       ni_little_letter_blue: 6,
     }
 
-    randMaker = RandomMaker.new(fabric_and_amounts)
+    randMaker = Quilt.new(fabric_and_amounts)
 
     expect(randMaker.list.class).to be(Array)
     expect(randMaker.list.length).to be(11 + 12 + 18 + 3 + 24 + 6 + 6)
