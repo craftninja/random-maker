@@ -1,4 +1,4 @@
-class Quilt
+class RandomMaker
   def initialize(fabrics_and_amounts)
     @list = expand(fabrics_and_amounts).shuffle
   end
